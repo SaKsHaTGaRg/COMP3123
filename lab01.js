@@ -26,6 +26,10 @@ function greattestInteger(a , b , c){
 }
 
 console.log(greattestInteger(1,100,101))
+console.log(greattestInteger(10,1,1000))
+console.log(greattestInteger(12,43,11))
+console.log(greattestInteger(15,11,121))
+
 
 
 
@@ -50,21 +54,23 @@ console.log(MoveAhead("Emulator"))
 //Write a JavaScript program to find the types of a given angle
 
 
-function FindAnglr(integer){
-   angle = " " 
-    if(i == 0 && i < 90 ){
-        angle="acute"
+function FindAnglr(i){
+    if(i > 0 && i < 90 ){
+        return "acute"
     }
     if(i == 90 ){
-        angle = "right"
+        return  "right"
     }
-    if(i > 90 ){
-        angle = "obtuse"
+    if(i > 90 && i < 180 ){
+        return  "obtuse"
     }
-    return angle
+    if(i === 180){
+        return "straight"
+    }
 }
 
 console.log(FindAnglr(35))
 console.log(FindAnglr(90))
 console.log(FindAnglr(135))
+console.log(FindAnglr(180))
 
