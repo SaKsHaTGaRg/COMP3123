@@ -1,8 +1,4 @@
-
-
-
-
-
+//101516778 Sakshat Garg
 word = "the quick brown fox"
 
 function capitalFirst(word){
@@ -46,8 +42,10 @@ function MoveAhead(word){
 }
 
 
-console.log(MoveAhead("python"))
-console.log(MoveAhead("Emulator"))
+console.log(MoveAhead("Python"));
+console.log(MoveAhead("JavaScript"));
+console.log(MoveAhead("Hi"));
+
 
 
 // question 4
@@ -69,8 +67,50 @@ function FindAnglr(i){
     }
 }
 
-console.log(FindAnglr(35))
+
+console.log(FindAnglr(47))
 console.log(FindAnglr(90))
-console.log(FindAnglr(135))
+console.log(FindAnglr(145))
 console.log(FindAnglr(180))
+
+
+
+// question 5
+//Write a JavaScript program to find the maximum possible sum of some of its k consecutive 
+// numbers (numbers that follow each other in order.) of a given array of positive integers.
+
+function maxSum(array){
+
+    let consecutiveSum 
+    let consecutiveSum2 
+    let maxTotal = ""
+for(let i = 0 ; i < array.length ; i++){
+
+consecutiveSum = array[i] + array[i+1]
+console.log(consecutiveSum)
+
+consecutiveSum2 = array[i+1] + array[i+2]
+console.log(consecutiveSum)
+
+
+if (consecutiveSum > consecutiveSum2){
+    maxTotal = consecutiveSum
+    return maxTotal
+}
+
+else if( consecutiveSum2 > consecutiveSum){
+    maxTotal = consecutiveSum2
+    return maxTotal
+}
+
+else {
+    return console.log("they're are equal")
+}
+
+}
+
+}
+
+console.log(maxSum[1,2,3,4,5])
+
 
