@@ -150,7 +150,7 @@ app.post("/student", (req, res) => {
     })
 })
 
-app.listen(SERVER_PORT, () => {
-    // console.loog("Server stareted");
-    console.log(`Server is running on http://localhost:${SERVER_PORT}`);
-});
+// app.listen(SERVER_PORT, () => {
+//     // console.loog("Server stareted");
+//     console.log(`Server is running on http://localhost:${SERVER_PORT}`);
+// });
